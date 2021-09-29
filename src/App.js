@@ -2,6 +2,7 @@ import React , {useState} from 'react';
 import Board from './components/Board';
 import calculateWinner from './Helper';
 import History from './components/History';
+
 import './styles/root.scss';
 
 const App = () => {
@@ -46,7 +47,7 @@ const App = () => {
   return (
     <div className="app">
       <h1>TIC TAC TOE</h1>
-      <h2>{Message}</h2>
+     <h1>{Message}</h1>
       <Board board={current.board} handleSquareClick={handleSquareClick}/>
       <History history={history} click={click} currentMove={currentMove}/>
     </div>
